@@ -1,0 +1,81 @@
+# 🕹️ GridVerse: A Multiplayer Tile-Based Chat Game
+
+**GridVerse** is a real-time multiplayer tile-based game that enables players to move across a 2D map, interact with the environment, and engage in retro-style proximity chat when adjacent to each other.
+
+> Built using **React**, **Tailwind CSS**, and **Go** with **WebSockets** for real-time communication and **ScyllaDB** for persistent data storage.
+
+---
+
+## 🚀 Features
+
+- 👥 Real-time multiplayer movement
+- 🧱 2D tile-based map rendering
+- 🏠 House tiles and collision detection
+- 📡 Proximity-based chat (opens when players are adjacent)
+- 🎮 Smooth player animations with retro-style chat UI
+- 🔐 Login/Signup system
+- ⚙️ Backend built with Go, using WebSockets for live updates
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React
+- Tailwind CSS
+- WebSockets (client)
+- Vite (or Create React App)
+
+**Backend:**
+- Go (Golang)
+- Gorilla Mux for routing
+- WebSockets (server-side)
+- ScyllaDB (NoSQL) for user and room data
+
+---
+
+## 📂 Project Structure
+
+
+
+---
+
+## 🧑‍💻 Getting Started
+
+### ✅ Prerequisites
+
+Make sure you have the following installed:
+
+- [Go](https://go.dev/doc/install)
+- [Node.js](https://nodejs.org/)
+- [ScyllaDB](https://www.scylladb.com/)
+- [Docker (optional)](https://www.docker.com/) — for running Scylla or Postgres containers
+
+---
+
+## ⚙️ Backend Setup (Go)
+
+1. Navigate to the backend folder:
+
+```bash
+cd backend
+
+Install dependencies:
+
+go mod tidy
+Run the server:
+
+go run main.go client.go
+
+The server will run on http://localhost:8080.
+
+ Usage
+Sign in or log in through the login screen.
+
+You’ll be placed on a tile-based map with your avatar.
+
+Use arrow keys or WASD to move around.
+
+When you’re adjacent to another player, a small chat box button appears.
+
+Click the box to open a retro-style chat window.
